@@ -13,9 +13,9 @@ const Navbar = () => {
   
   return (
     <nav className="sticky top-0 h-16 flex justify-center items-center px-20 bg-neutral-200 " style={{ backgroundColor: "#F8F5CD" }}>
-      <img className="h-44 absolute left-9" src={navLogo} alt="doelazis-navlogo" />
+      <img src={navLogo} alt="doelazis-navlogo" className="h-44 absolute left-9"  />
       <div>
-        {pages.map(({ page, path }) => {
+        {pages.map(({ page, path }, idx) => {
           let style = "";
 
           if (location.pathname === path) {
@@ -25,7 +25,7 @@ const Navbar = () => {
           }
 
           return (
-            <Link to={path} className={style}>
+            <Link to={path} key={idx} className={style}>
               {page}
             </Link>
           );
