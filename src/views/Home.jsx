@@ -1,6 +1,9 @@
 const Home = () => {
   return (
-    <h1>home page goes here</h1>
+    <div>
+      <h1 className="h-96">home page goes here</h1>
+      <h1 className="h-96">home page goes here</h1>
+    </div>
   );
 }
 

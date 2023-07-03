@@ -56,10 +56,10 @@ const Footer = () => {
       </div>
       <div>
         <p className="font-medium">STAY IN TOUCH</p>
-        <div>
+        <div className="flex justify-center">
           {socialMedia.map(({ src, alt, url }, idx) => (
             <a href={url} target="_blank" rel="noopener noreferrer">
-              <img src={src} alt={alt} key={idx} className="w-12 my-4 mx-auto" />
+              <img src={src} alt={alt} key={idx} className="w-8 my-4 mx-2" />
             </a>
           ))}
         </div>

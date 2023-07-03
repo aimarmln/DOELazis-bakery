@@ -13,22 +13,22 @@ const Navbar = () => {
   
   return (
     <nav className="sticky top-0 h-16 flex justify-center items-center px-20 bg-neutral-200 " style={{ backgroundColor: "#F8F5CD" }}>
-      <img src={navLogo} alt="doelazis-navlogo" className="h-44 absolute left-9"  />
+      <img src={navLogo} alt="doelazis-navlogo" className="h-44 absolute left-0"  />
       <div>
         {pages.map(({ page, path }, idx) => {
-          let style = "";
-
           if (location.pathname === path) {
-            style = "rounded-lg px-3 py-2 text-slate-700 font-medium bg-slate-100 text-slate-900 transition duration-200";
+            return (
+              <Link to={path} key={idx} className="mx-4 py-1 font-medium transition duration-300" style={{ borderBottom: "2px solid", borderBottomColor: "#2C110A" }}>
+                {page}
+              </Link>
+            );
           } else {
-            style = "rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900 transition duration-200";
+            return (
+              <Link to={path} key={idx} className="mx-4 py-1 text-slate-700 font-medium border-b-2 border-transparent hover:border-b-rose-950 transition duration-300">
+                {page}
+              </Link>
+            );
           }
-
-          return (
-            <Link to={path} key={idx} className={style}>
-              {page}
-            </Link>
-          );
         })}
       </div>
     </nav>
