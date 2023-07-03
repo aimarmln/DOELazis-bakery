@@ -12,19 +12,19 @@ const Navbar = () => {
   const location = useLocation();
   
   return (
-    <nav className="sticky top-0 h-16 flex justify-center items-center px-20 bg-neutral-200 " style={{ backgroundColor: "#F8F5CD" }}>
+    <nav className="sticky top-0 h-16 flex justify-center items-center px-20 bg-cream" >
       <img src={navLogo} alt="doelazis-navlogo" className="h-44 absolute left-0"  />
       <div>
         {pages.map(({ page, path }, idx) => {
           if (location.pathname === path) {
             return (
-              <Link to={path} key={idx} className="mx-4 py-1 font-medium transition duration-300" style={{ borderBottom: "2px solid", borderBottomColor: "#2C110A" }}>
+              <Link to={path} key={idx} className="mx-4 py-1 text-darkBrown font-medium border-b-2 border-b-darkBrown transition duration-250">
                 {page}
               </Link>
             );
           } else {
             return (
-              <Link to={path} key={idx} className="mx-4 py-1 text-slate-700 font-medium border-b-2 border-transparent hover:border-b-rose-950 transition duration-300">
+              <Link to={path} key={idx} className="mx-4 py-1 text-slate-700 font-medium border-b-2 border-transparent hover:text-darkBrown hover:border-b-darkBrown transition duration-250">
                 {page}
               </Link>
             );

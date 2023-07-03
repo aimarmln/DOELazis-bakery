@@ -36,7 +36,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative pt-12 pb-20 px-40 text-white flex justify-around" style={{ backgroundColor: "#1E1916" }}>
+    <footer className="relative pt-12 pb-20 px-40 text-white flex justify-around bg-darkBrown">
       <div>
         <p className="font-medium">DELIVERY SERVICE</p>
         {deliveryServices.map(({ src, alt, url }, idx) => (
