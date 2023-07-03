@@ -36,7 +36,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="pt-12 pb-16 px-40 text-white flex justify-around" style={{ backgroundColor: "#1E1916" }}>
+    <footer className="relative pt-12 pb-20 px-40 text-white flex justify-around" style={{ backgroundColor: "#1E1916" }}>
       <div>
         <p className="font-medium">DELIVERY SERVICE</p>
         {deliveryServices.map(({ src, alt, url }, idx) => (
@@ -64,6 +64,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      <p className="absolute bottom-10 text-sm">&copy; 2023 Athiya & Aimar. All rights reserved.</p>
     </footer>
   );
 }
