@@ -1,8 +1,8 @@
-import goFood from "../Assets/Images/logo-gofood.jpg";
-import grabFood from "../Assets/Images/logo-grab.jpg";
-import shopeeFood from "../Assets/Images/logo-shopeefood.jpg";
-import instagram from "../Assets/Images/instagram-logo.png";
-import facebook from "../Assets/Images/facebook-logo.png";
+import goFood from "../assets/images/logo-gofood.jpg";
+import grabFood from "../assets/images/logo-grab.jpg";
+import shopeeFood from "../assets/images/logo-shopeefood.jpg";
+import instagram from "../assets/images/instagram-logo.png";
+import facebook from "../assets/images/facebook-logo.png";
 
 const Footer = () => {
   const deliveryServices = [
@@ -33,13 +33,13 @@ const Footer = () => {
       alt: "facebook-logo",
       url: "https://www.facebook.com/DOELazisbakery/"
     }
-  ]
+  ];
 
   return (
     <footer className="pt-12 pb-16 px-40 text-white flex justify-around" style={{ backgroundColor: "#1E1916" }}>
       <div>
         <p className="font-medium">DELIVERY SERVICE</p>
-        {deliveryServices.map(({ src, alt, url}, idx) => (
+        {deliveryServices.map(({ src, alt, url }, idx) => (
           <a href={url} target="_blank" rel="noopener noreferrer">
             <img src={src} alt={alt} key={idx} className="w-20 rounded-lg my-4 mx-auto" />
           </a>

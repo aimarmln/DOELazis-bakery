@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import navLogo from "../Assets/Images/doelazis-bakery.png"
+import navLogo from "../assets/images/doelazis-bakery.png"
 
 const Navbar = () => {
   const pages = [
