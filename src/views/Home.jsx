@@ -6,9 +6,8 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <HomeCard />
-      <FavMenu />
-      <h1>homepage goes here</h1>
+      <HomeCard /> 
+      <FavMenu /> 
     </>
   );
 }
