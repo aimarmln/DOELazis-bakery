@@ -1,6 +1,14 @@
+import FavMenu from "../components/FavMenu";
+import HeroSection from "../components/HeroSection";
+import HomeCard from "../components/HomeCard";
+
 const Home = () => {
   return (
-    <h1>home page goes here</h1>
+    <>
+      <HeroSection />
+      <HomeCard />
+      <FavMenu />
+    </>
   );
 }
 
