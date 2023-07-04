@@ -12,7 +12,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="relative py-8 px-40 text-white flex justify-around bg-darkBrown">
+    <footer className="relative py-9 px-40 text-white flex justify-around bg-darkBrown">
       <div>
         <p className="font-medium">DELIVERY SERVICE</p>
         {deliveryServices.map(({ src, alt, url }, idx) => (
