@@ -1,0 +1,191 @@
+[
+  {
+    "breadName": "Almond Fla",
+    "desc": "Roti isi cream almond dan topping almond slice",
+    "price": "Rp7.000,00",
+    "src": "almond-fla.png",
+    "alt": "almond-fla"
+  },
+  {
+    "breadName": "Bana Chiz",
+    "desc": "Roti isi pisang keju",
+    "price": "Rp7.000,00",
+    "src": "bana-chiz.png",
+    "alt": "bana-chiz"
+  },
+  {
+    "breadName": "Bana Choc",
+    "desc": "Roti isi pisang coklat",
+    "price": "Rp7.000,00",
+    "src": "bana-choc.png",
+    "alt": "bana-choc"
+  },
+  {
+    "breadName": "Blueberry Milk",
+    "desc": "Roti isi blueberry dengan fla susu",
+    "price": "Rp7.000,00",
+    "src": "blueberry-milk.png",
+    "alt": "blueberry-milk"
+  },
+  {
+    "breadName": "Cheese",
+    "desc": "Roti isi keju parut",
+    "price": "Rp6.000,00",
+    "src": "cheese.png",
+    "alt": "chese"
+  },
+  {
+    "breadName": "Chiz Mania",
+    "desc": "Roti isi keju slice, mayo, dan sauce",
+    "price": "Rp8.000,00",
+    "src": "chiz-mania.png",
+    "alt": "chiz-mania"
+  },
+  {
+    "breadName": "Choco",
+    "desc": "Roti coklat",
+    "price": "Rp6.000,00",
+    "src": "choco.png",
+    "alt": "choco"
+  },
+  {
+    "breadName": "Choco Melow",
+    "desc": "Roti isi coklat, topping vanilla, dan chocochips",
+    "price": "Rp7.000,00",
+    "src": "choco-mellow.png",
+    "alt": "choco-melow"
+  },
+  {
+    "breadName": "Chicken Floss",
+    "desc": "Roti abon ayam mixed pedas manis",
+    "price": "Rp7.500,00",
+    "src": "chicken-floss.png",
+    "alt": "chicken-floss"
+  },
+  {
+    "breadName": "Coffee Bun",
+    "desc": "Roti kopi mixed butter",
+    "price": "Rp7.000,00",
+    "src": "coffee-bun.png",
+    "alt": "coffee-bun"
+  },
+  {
+    "breadName": "Cream Cheese",
+    "desc": "Roti dengan cream keju lembut",
+    "price": "Rp7.000,00",
+    "src": "cream-cheese.png",
+    "alt": "cream-cheese"
+  },
+  {
+    "breadName": "Croissant Almond",
+    "desc": "Croissant filling n topping cream almond",
+    "price": "Rp13.000,00",
+    "src": "croissant-almond.png",
+    "alt": "croissant-almond"
+  },
+  {
+    "breadName": "Go Green",
+    "desc": "Roti green tea",
+    "price": "Rp7.500,00",
+    "src": "go-green.png",
+    "alt": "go-green"
+  },
+  {
+    "breadName": "Matcha",
+    "desc": "Roti rasa matcha",
+    "price": "Rp7.000,00",
+    "src": "matcha.png",
+    "alt": "matcha"
+  },
+  {
+    "breadName": "Oat Cereal Butter",
+    "desc": "Roti isi oat dengan rasa gurih butter",
+    "price": "Rp7.000,00",
+    "src": "oat-cereal-butter.png",
+    "alt": "oat-cereal-butter"
+  },
+  {
+    "breadName": "Pizza Bread",
+    "desc": "Roti rasa pizza dengan parutan keju, sosis, dan saos",
+    "price": "Rp7.500,00",
+    "src": "pizza-bread.png",
+    "alt": "pizza-bread"
+  },
+  {
+    "breadName": "Plain Croissant",
+    "desc": "Croissant original tanpa isian",
+    "price": "Rp10.000,00",
+    "src": "plain-croissant.png",
+    "alt": "plain-croissant"
+  },
+  {
+    "breadName": "Raisin Cinnamon",
+    "desc": "Roti kismis dengan isian cinnamon",
+    "price": "Rp7.000,00",
+    "src": "raisin-cinnamon.png",
+    "alt": "raisin-cinnamon"
+  },
+  {
+    "breadName": "Raisin Sesame",
+    "desc": "Roti manis dengan kismis dan custard bertabur wijen",
+    "price": "Rp7.500,00",
+    "src": "raisin-sesame.png",
+    "alt": "raisin-sesame"
+  },
+  {
+    "breadName": "Red Bean",
+    "desc": "Roti isi kacang merah",
+    "price": "Rp7.000,00",
+    "src": "red-bean.png",
+    "alt": "red-bean"
+  },
+  {
+    "breadName": "Scramble Choco Cheese",
+    "desc": "Roti isi coklat keju twist dengan butter",
+    "price": "Rp7.000,00",
+    "src": "scramble-choco-cheese.png",
+    "alt": "scramble-choco-cheese"
+  },
+  {
+    "breadName": "Smoked Beef",
+    "desc": "Roti isi daging asap, keju parut, dan mayo",
+    "price": "Rp7.500,00",
+    "src": "smoked-beef.png",
+    "alt": "smoked-beef"
+  },
+  {
+    "breadName": "Sosis Bread",
+    "desc": "Roti manis isi sosis ayam",
+    "price": "Rp6.500,00",
+    "src": "sosis-bread.png",
+    "alt": "sosis-bread"
+  },
+  {
+    "breadName": "Spicy Nori",
+    "desc": "Roti abon ayam mixed dengan nori",
+    "price": "Rp8.000,00",
+    "src": "spicy-nori.png",
+    "alt": "spicy-nori"
+  },
+  {
+    "breadName": "Srikaya",
+    "desc": "Roti isi srikaya",
+    "price": "Rp6.000,00",
+    "src": "srikaya.png",
+    "alt": "srikaya"
+  },
+  {
+    "breadName": "Strawberry Fla",
+    "desc": "Roti isi selai strawberry",
+    "price": "Rp6.000,00",
+    "src": "strawberry-fla.png",
+    "alt": "strawberry-fla"
+  },
+  {
+    "breadName": "Tiger Roll",
+    "desc": "Roti roll abon",
+    "price": "Rp7.500,00",
+    "src": "tiger-roll.png",
+    "alt": "tiger-roll"
+  }
+]
