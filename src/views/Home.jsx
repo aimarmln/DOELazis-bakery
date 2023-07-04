@@ -8,6 +8,7 @@ const Home = () => {
       <HeroSection />
       <HomeCard />
       <FavMenu />
+      <h1>homepage goes here</h1>
     </>
   );
 }

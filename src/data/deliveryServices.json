@@ -1,0 +1,16 @@
+[
+  { 
+    "src": "logo-gofood.jpg", 
+    "alt": "go-food-logo", 
+    "url": "https://gofood.co.id/id/jakarta/restaurant/toko-roti-doelazis-bakery-depok-89e6078c-d589-447f-85a6-4bae61e7ffa2"},
+  { 
+    "src": "logo-grab.jpg", 
+    "alt": "grab-food-logo",
+    "url": "https://food.grab.com/id/id/restaurant/doelazis-bakery-tugu-delivery/6-CZNYL3VCVBXEEE"
+  },
+  { 
+    "src": "logo-shopeefood.jpg", 
+    "alt": "shopee-food-logo",
+    "url": "https://shopee.co.id/Doelazis-Bakery-Pizza-Bread-Roti-Sosis-i.3227094.1995996772?is_from_login=true"
+  }
+]
