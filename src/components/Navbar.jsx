@@ -12,7 +12,7 @@ const Navbar = () => {
   const location = useLocation();
   
   return (
-    <nav className="sticky top-0 h-16 flex justify-center items-center px-20 bg-cream" >
+    <nav className="sticky z-10 top-0 h-16 flex justify-center items-center px-20 bg-cream" >
       <img src={navLogo} alt="doelazis-navlogo" className="h-44 absolute left-0"  />
       <div>
         {pages.map(({ page, path }, idx) => {

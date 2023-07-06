@@ -25,7 +25,7 @@ const Contact = () => {
         </form>
         <img src={require("../assets/images/for-about-page-3.jpg")} alt="test" className="w-[450px] mx-12" />
       </div>
-      <div className="flex justify-center items-center flex-wrap py-12" style={{ backgroundColor: "#605A44" }}>
+      <div className="flex justify-center items-center flex-wrap py-12 bg-dustyBrown">
         <img src={require("../assets/images/logo-transparent.png")} alt="doelazis-logo" className="w-[600px]" />
         <div className="w-[600px] flex flex-col items-center">
           <p className="text-5xl text-center text-darkBrown font-semibold">For <span className="text-cream">delivery enquiries</span>, contact us through <span className="text-cream">Whatsapp</span>.</p>
