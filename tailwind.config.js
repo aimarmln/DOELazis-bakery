@@ -13,7 +13,12 @@ module.exports = {
         cream: "#F8F1D2",
         black: "#040404",
         green: "#3C4431",
+        brokenWhite: "#FCFBF4",
       },
+      fontFamily: {
+        'satisfy': ['Satisfy'],
+        'poppins': ['Poppins']
+      }
     },
   },
   plugins: [],
