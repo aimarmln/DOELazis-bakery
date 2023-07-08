@@ -13,7 +13,7 @@ export const favBread = [
   },
   {
     "name": "SCRAMBLE CHOCO CHEESE",
-    "desc": "Indulge in the deliciousness of Chocolate and Cheese Twist Filled Bread with a tantalizing touch of buttery softness",
+    "desc": "The deliciousness of Chocolate and Cheese Twist Filled Bread with a tantalizing touch of buttery softness",
     "src": "scramble-choco-cheese.png",
     "alt": "scramble-choco-cheese"
   }
