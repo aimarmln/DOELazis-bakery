@@ -1,4 +1,7 @@
+import HeroSection from "../components/HeroSection";
 import PageHeading from "../components/PageHeading";
+import Map from "../components/Map";
+import AboutComponent from "../components/AboutComponent";
 
 const About = () => {
   const outlet = [
@@ -8,26 +11,33 @@ const About = () => {
     { src: "for-about-page-4.jpg", alt: "pict-4" },
   ];
 
+  const about = [
+    { 
+      highlight: "DOELazis Bakery",
+      main: "DOELazis Bakery is where passion, expertise, and community converge to create exceptional artisanal bread",
+      desc: "Our products have been crafted with unwavering dedication and a commitment to excellence, delighting bread enthusiasts with unparalleled flavor, texture, and the unmistakable aroma of artisanal mastery.",
+      isLefty: true
+    },
+    {
+      highlight: "Authentic Bread",
+      main: "Handcrafted, Delightful, and Authentic Bread",
+      desc: "Our handcrafted, artisanal bread that delights with its authentic flavors. Experience the joy of breadmaking at Doelazis Bakery, where every loaf is meticulously crafted with dedication, bringing together the essence of wholesome ingredients and the artistry of a passionate people.",
+      isLefty: false
+    }
+  ];
+
   return (
     <>
+      <HeroSection />
       <PageHeading text="About Us" />
-      <div className="flex flex-wrap justify-center items-center">
-        <p className="w-[500px] text-4xl mx-4 text-center mb-8 sm:text-center md:text-left bg-green rounded-lg p-10 text-cream"><span className="font-bold text-lightBrown">DOELazis Bakery</span> is where passion, expertise, and community converge to create exceptional artisanal bread</p>
-        <p className="w-[500px] text-lg mx-4 md:text-left sm:text-justify text-justify">Our products have been crafted with unwavering dedication and a commitment to excellence, delighting bread enthusiasts with unparalleled flavor, texture, and the unmistakable aroma of artisanal mastery.</p>
-      </div>
+      <AboutComponent {...about[0]} />
       <PageHeading text="Our Philosophy" />
-      <div className="flex flex-row-reverse flex-wrap justify-center items-center">
-        <p className="w-[500px] text-4xl mx-4 text-center mb-8 sm:text-center md:text-right bg-green rounded-lg p-10 text-cream">Handcrafted, Delightful and <span className="font-bold text-lightBrown">Authentic Bread</span></p>
-        <p className="w-[500px] text-lg mx-4 md:text-left sm:text-justify text-justify">Our handcrafted, artisanal bread that delights with its authentic flavors. Experience the joy of breadmaking at Doelazis Bakery, where every loaf is meticulously crafted with dedication, bringing together the essence of wholesome ingredients and the artistry of a passionate people.</p>
-      </div>
-      {/* <div className="flex flex-wrap justify-evenly ">
+      <AboutComponent {...about[1]} />
+      <iframe src="https://www.youtube.com/embed/QDKUkPSw3yA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="mx-auto my-20 w-10/12 h-[473px] md:w-[1000px] md:h-[563px]" allowfullscreen></iframe>
+      <Map />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center mx-auto mt-20 mb-20 md:mb-40 w-10/12 md:w-[1000px]">
         {outlet.map(({ src, alt }, idx) => (
-          <img src={require(`../assets/images/${src}`)} alt={alt} key={idx} className="w-96" />
-        ))}
-      </div> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center w-8/12 mx-auto mt-20 mb-40">
-        {outlet.map(({ src, alt }, idx) => (
-          <img src={require(`../assets/images/${src}`)} alt={alt} key={idx} className={`w-96 relative ${(idx + 1) % 2 === 0 ? " top-0 md:top-20" : ""}`} />
+          <img src={require(`../assets/images/${src}`)} alt={alt} key={idx} className={`${idx % 2 === 1 ? "relative top-0 md:top-20" : ""}`} />
         ))}
       </div>
     </>

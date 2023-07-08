@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="flex justify-center items-center flex-wrap py-12 bg-dustyBrown">
         <img src={require("../assets/images/logo-transparent.png")} alt="doelazis-logo" className="w-[600px]" />
         <div className="w-[600px] flex flex-col items-center">
-          <p className="text-5xl text-center text-darkBrown font-semibold">For <span className="text-cream">delivery enquiries</span>, contact us through <span className="text-cream">Whatsapp</span>.</p>
+          <p className="text-4xl md:text-5xl text-center text-darkBrown font-semibold">For <span className="text-cream">delivery enquiries</span>, contact us through <span className="text-cream">Whatsapp</span>.</p>
           <a href="https://wa.me/08159076203" target="_blank" rel="noopener noreferrer" class="my-8 text-4xl bg-transparent hover:bg-cream text-cream font-semibold hover:text-dustyBrown py-3 px-5 border border-cream hover:border-transparent transition duration-300 rounded">0815-9076-203</a>
         </div>
       </div>
