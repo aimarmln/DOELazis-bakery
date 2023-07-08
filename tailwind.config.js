@@ -14,6 +14,7 @@ module.exports = {
         black: "#040404",
         green: "#3C4431",
         brokenWhite: "#FCFBF4",
+        gold: '#FFB32C',
       },
       fontFamily: {
         'satisfy': ['Satisfy'],
