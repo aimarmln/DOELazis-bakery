@@ -6,16 +6,16 @@ const FavMenu = () => {
     return (
         <favmenu>
             <div class='bg-no-repeat bg-cover w-full content-center p-8 relative' style={{ backgroundColor: "#605a44" }}>
-                <h1 className="text-center text-2xl my-10 text-brokenWhite">
+                <h1 className="text-center text-2xl my-5 text-brokenWhite">
                     <strong>THE ALL TIME FAVORITES</strong> 
                 </h1>
 
-                <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-items-center gap-6 mx-24 my-10 text-center text-brokenWhite'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-items-center gap-6 mx-auto my-10 text-center text-brokenWhite w-4/5'>
                     {favBreads.map((item, index) => (
-                        <div className='box border-t-4 border-cream shadow-lg' key={index}>
-                            <img class ='w-14 lg:1/12 absolute' src ={bookmark} alt='bookmark'/>
+                        <div className='relative box border-t-4 border-cream shadow-lg rounded-xl' key={index}>
+                            <img class ='w-14 left-3 lg:1/12 absolute z-10' src ={bookmark} alt='bookmark'/>
 
-                            <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-darkBrown/30">
+                            <div class="group rounded-xl relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-darkBrown/30">
                                 <h1 class="text-md font-medium text-white m-4">{item.name}</h1>
                                 <img class="w-5/6 mx-auto object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 my-10 mb-15" src={require(`../assets/images/${item.src}`)} alt={item.alt} />
                                 
@@ -27,9 +27,9 @@ const FavMenu = () => {
                             </div>
                     ))} 
                 </div>
-                <div className="text-center content-center">
-                    <Link to="/Menu">
-                        <a class="inline-block px-7 py-3 mr-1.5 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Our Menu</a>
+                <div className="text-center content-center mb-5">
+                    <Link to="/Menu" className="inline-block px-7 py-3 mr-1.5 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">
+                        Our Menu
                     </Link>
                 </div>
             </div> 

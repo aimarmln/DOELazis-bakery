@@ -17,7 +17,9 @@ const Navbar = () => {
     <nav id="nav" className="sticky z-10 top-0 p-4 h-20 bg-cream flex items-center md:justify-center flex items-center">
       <div className="flex justify-between items-center">
         <div className="absolute left-0">
-          <img src={navLogo} alt="doelazis-nav" className="w-72" />
+          <Link to="/">
+            <img src={navLogo} alt="doelazis-nav" className="w-72" />
+          </Link>
         </div>
         <div className="absolute right-4 md:hidden">
           <button
@@ -61,7 +63,7 @@ const Navbar = () => {
           if (location.pathname === path) {
             return (
               <li className={`md:my-0 ${idx === 1 ? "my-0" : "my-6"}`}>
-                <Link to={path} key={idx} className="mx-5 py-1 text-darkBrown font-medium border-b-2 border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
+                <Link to={path} key={idx} className="mx-5 py-1 text-darkBrown font-medium border-b-[3px] border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
                   {page}
                 </Link>
               </li>
@@ -69,7 +71,7 @@ const Navbar = () => {
           } else {
             return (
               <li className="my-6 md:my-0">
-                <Link to={path} key={idx} className="mx-5 py-1 text-slate-700 font-medium border-b-2 border-transparent hover:text-darkBrown hover:border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
+                <Link to={path} key={idx} className="mx-5 py-1 text-slate-700 font-medium border-b-[3px] border-transparent hover:text-darkBrown hover:border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
                   {page}
                 </Link>
               </li>

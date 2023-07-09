@@ -24,7 +24,7 @@ const AboutComponent = ({ highlight, main, desc, isLefty }) => {
             <span className="font-bold text-lightBrown"> {highlight}</span>
           </p>
         )}
-      <p className="w-[500px] text-lg mx-4 md:text-left sm:text-justify text-justify">{desc}</p>
+      <p className="w-[500px] text-lg mx-10 md:mx-4 md:text-left sm:text-justify text-justify">{desc}</p>
     </div>
   );
 }

@@ -11,10 +11,10 @@ const HomeCard = () => {
                 </div>
 
                 <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 justify-items-center gap-2 mx-24 my-10 p-2'>
-                    {homeCards.map((items, index) => (
-                        <div className='text-center text-lg' key={index}>
-                            <img class='h-24 m-auto my-12 hover:scale-150 drop-shadow-lg transition duration-300 ease-in-out' src={require(`../assets/images/${items.cover}`)} alt={items.alt}/>
-                            <label class='box border-t-4 border-dustyBrown pt-4 my-6'>{items.desc}</label>   
+                    {homeCards.map(({ cover, alt, desc }, idx) => (
+                        <div className='text-center text-lg' key={idx}>
+                            <img class='h-36 m-auto my-12 hover:scale-110 drop-shadow-lg transition duration-300 ease-in-out' src={require(`../assets/images/${cover}`)} alt={alt}/>
+                            <label class='box border-t-4 border-dustyBrown pt-4 my-6 font-semibold text-xl'>{desc}</label>   
                         </div>
                     ))}
                 </div>

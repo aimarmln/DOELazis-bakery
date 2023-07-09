@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         'satisfy': ['Satisfy'],
         'poppins': ['Poppins']
+      },
+      height: {
+        '2/3vh': 'calc(2/3 * 100vh)'
       }
     },
   },

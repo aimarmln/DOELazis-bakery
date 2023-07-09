@@ -13,7 +13,7 @@ const Menu = () => {
   return (
     <>
       <PageHeading text="Our Breads" />
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-y-16 mb-12 my-12 mx-52">
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-y-16 mb-12 my-12 md:mx-[12%]">
         {breads.map(({ breadName, desc, price, src, alt }, idx) => (
           <BreadCard breadName={breadName.toUpperCase()} desc={desc} price={price} src={src} alt={alt} key={idx} />
         ))}

@@ -2,6 +2,7 @@ import HeroSection from "../components/HeroSection";
 import PageHeading from "../components/PageHeading";
 import Map from "../components/Map";
 import AboutComponent from "../components/AboutComponent";
+import wallpaper from "../assets/images/wallpaper-3.jpg"
 
 const About = () => {
   const outlet = [
@@ -28,7 +29,7 @@ const About = () => {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection wallpaper={wallpaper} upperText="Baking Blissful Moments," bottomText="One Delightful Bite at a Time!" />
       <PageHeading text="About Us" />
       <AboutComponent {...about[0]} />
       <PageHeading text="Our Philosophy" />
