@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <HeroSection />
       <HomeCard /> 
-      <FavMenu /> 
+      <FavMenu />
     </>
   );
 }

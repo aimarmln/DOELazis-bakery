@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav id="nav" className="sticky z-10 top-0 p-4 h-20 bg-cream flex items-center md:justify-center flex items-center">
       <div className="flex justify-between items-center">
         <div className="absolute left-0">
-          <img src={navLogo} alt="doelazis-nav" className="w-52" />
+          <img src={navLogo} alt="doelazis-nav" className="w-72" />
         </div>
         <div className="absolute right-4 md:hidden">
           <button
