@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import navLogo from "../assets/images/doelazis-bakery.png"
-import { useState } from "react";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -62,16 +62,26 @@ const Navbar = () => {
         {pages.map(({ page, path }, idx) => {
           if (location.pathname === path) {
             return (
-              <li className={`md:my-0 ${idx === 1 ? "my-0" : "my-6"}`}>
-                <Link to={path} key={idx} className="mx-5 py-1 text-darkBrown font-medium border-b-[3px] border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
+              <li className={`md:my-0 ${idx === 1 ? "my-0" : "my-6"}`} key={idx}>
+                <Link to={path} className="mx-5 py-1 text-darkBrown font-medium border-b-[3px] border-b-darkBrown transition duration-250" 
+                  onClick={() => {
+                    setNavbar(false);
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   {page}
                 </Link>
               </li>
             );
           } else {
             return (
-              <li className="my-6 md:my-0">
-                <Link to={path} key={idx} className="mx-5 py-1 text-slate-700 font-medium border-b-[3px] border-transparent hover:text-darkBrown hover:border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
+              <li className="my-6 md:my-0" key={idx}>
+                <Link to={path} className="mx-5 py-1 text-slate-700 font-medium border-b-[3px] border-transparent hover:text-darkBrown hover:border-b-darkBrown transition duration-250" 
+                  onClick={() => {
+                    setNavbar(false);
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   {page}
                 </Link>
               </li>
