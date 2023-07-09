@@ -56,12 +56,12 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      <ul className={`md:flex md:items-center absolute md:static z-[-1] md:z-auto bg-cream/95 md:bg-cream left-0 right-0 text-center md:w-auto py-4 md:py-0 pl-7 md:pl-0 md:opacity-100 top-[-400px] transition-all duration-500 ${navbar ? "top-[80px] opacity-100 md:border-none md:shadow-none border-b-1 border-b-dustyBrown shadow-md shadow-dustyBrown ease-out" : "ease-in"}`}>
+      <ul className={`md:flex md:items-center absolute md:static z-[-1] md:z-auto bg-cream/95 md:bg-cream left-0 right-0 text-center md:w-auto py-4 md:py-0 pl-7 md:pl-0 md:opacity-100 top-[-400px] transition-all duration-500 ${navbar ? "top-[80px] opacity-100 border-b-1 border-b-dustyBrown shadow-md shadow-dustyBrown ease-out" : "ease-in"}`}>
         {pages.map(({ page, path }, idx) => {
           if (location.pathname === path) {
             return (
               <li className={`md:my-0 ${idx === 1 ? "my-0" : "my-6"}`}>
-                <Link to={path} key={idx} className="mx-5 py-1 text-darkBrown font-medium border-b-2 border-b-darkBrown transition duration-250" onClick={() => setNavbar(!navbar)}>
+                <Link to={path} key={idx} className="mx-5 py-1 text-darkBrown font-medium border-b-2 border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
                   {page}
                 </Link>
               </li>
@@ -69,7 +69,7 @@ const Navbar = () => {
           } else {
             return (
               <li className="my-6 md:my-0">
-                <Link to={path} key={idx} className="mx-5 py-1 text-slate-700 font-medium border-b-2 border-transparent hover:text-darkBrown hover:border-b-darkBrown transition duration-250" onClick={() => setNavbar(!navbar)}>
+                <Link to={path} key={idx} className="mx-5 py-1 text-slate-700 font-medium border-b-2 border-transparent hover:text-darkBrown hover:border-b-darkBrown transition duration-250" onClick={() => setNavbar(false)}>
                   {page}
                 </Link>
               </li>
