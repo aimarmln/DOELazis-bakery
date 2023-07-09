@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
   
   return (
-    <nav id="nav" className="sticky z-10 top-0 p-4 h-20 bg-cream flex items-center md:justify-center flex items-center">
+    <nav id="nav" className="sticky z-20 top-0 p-4 h-20 bg-cream flex items-center md:justify-center flex items-center">
       <div className="flex justify-between items-center">
         <div className="absolute left-0">
           <Link to="/">
@@ -58,7 +58,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      <ul className={`md:flex md:items-center absolute md:static z-[-1] md:z-auto bg-cream/95 md:bg-cream left-0 right-0 text-center md:w-auto py-4 md:py-0 pl-7 md:pl-0 md:opacity-100 top-[-400px] transition-all duration-500 ${navbar ? "top-[80px] opacity-100 border-b-1 border-b-dustyBrown shadow-md shadow-dustyBrown ease-out" : "ease-in"}`}>
+      <ul className={`md:flex md:items-center absolute md:static z-[-1] md:z-auto bg-cream/95 md:bg-cream left-0 right-0 text-center md:w-auto py-4 md:py-0 pl-7 md:pl-0 md:opacity-100 top-[-400px] transition-all duration-500 ${navbar ? "top-[80px] opacity-100 border-b-1 border-b-dustyBrown shadow-md ease-out" : "ease-in"}`}>
         {pages.map(({ page, path }, idx) => {
           if (location.pathname === path) {
             return (

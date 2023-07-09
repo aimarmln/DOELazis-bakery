@@ -1,25 +1,37 @@
+import { useState } from "react";
 import InputComponent from "../components/InputComponent";
 import PageHeading from "../components/PageHeading";
+import Modal from "../components/Modal";
 
 const Contact = () => {
+  const [modal, setModal] = useState(false);
+
   const input = [
-    { inputFor: "Name", type: "text",isTextArea: false },
-    { inputFor: "Email", type: "email",isTextArea: false },
-    { inputFor: "Phone", type: "tel",isTextArea: false },
-    { inputFor: "Company", type: "text",isTextArea: false },
-    { inputFor: "Subject", type: "text",isTextArea: false },
-    { inputFor: "Message", type: "text",isTextArea: true },
+    { inputFor: "Name", type: "text", isTextArea: false },
+    { inputFor: "Email", type: "email", isTextArea: false },
+    { inputFor: "Phone", type: "tel", isTextArea: false },
+    { inputFor: "Company", type: "text", isTextArea: false },
+    { inputFor: "Subject", type: "text", isTextArea: false },
+    { inputFor: "Message", type: "text", isTextArea: true },
   ];
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    setModal(true);
+    setTimeout(() => {
+      setModal(false);
+    }, 5000);
+  }
 
   return (
     <>
       <PageHeading text="Contact Us" />
       <div className="flex justify-center items-center flex-wrap-reverse mb-8">
-        <form action="" className="mx-12 w-96">
+        <form action=""  className="mx-12 w-96" onSubmit={handleSubmit}>
           {input.map(({ inputFor, type, isTextArea }, idx) => (
             <InputComponent inputFor={inputFor} type={type} isTextArea={isTextArea} key={idx} />
           ))}
-          <button class="mb-8 bg-transparent hover:bg-dustyBrown text-dustyBrown font-semibold hover:text-white py-2 px-4 border border-dustyBrown hover:border-transparent transition duration-300 rounded">
+          <button class="mb-8 bg-transparent hover:bg-dustyBrown text-dustyBrown font-semibold hover:text-white py-2 px-4 border border-dustyBrown hover:border-transparent transition duration-300 rounded" type="submit">
             Submit
           </button>
         </form>
@@ -32,6 +44,7 @@ const Contact = () => {
           <a href="https://wa.me/08159076203" target="_blank" rel="noopener noreferrer" class="my-8 text-4xl bg-transparent hover:bg-cream text-cream font-semibold hover:text-dustyBrown py-3 px-5 border border-cream hover:border-transparent transition duration-300 rounded">0815-9076-203</a>
         </div>
       </div>
+      <Modal visible={modal} onClose={() => setModal(false)} />
     </>
   );
 }
