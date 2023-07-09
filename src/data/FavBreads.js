@@ -1,4 +1,4 @@
-export const favBread = [
+export const favBreads = [
   {
     "name": "BLUEBERRY MILK",
     "desc": "Blueberry-filled bread with a gentle touch of indulgent milk custard that delights the palate",
