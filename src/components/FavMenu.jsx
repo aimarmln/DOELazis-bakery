@@ -13,7 +13,7 @@ const FavMenu = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-items-center gap-6 mx-auto my-10 text-center text-brokenWhite w-4/5'>
                     {favBreads.map((item, index) => (
                         <div className='relative box border-t-4 border-cream shadow-lg rounded-xl' key={index}>
-                            <img class ='w-14 left-3 lg:1/12 absolute z-10' src ={bookmark} alt='bookmark'/>
+                            <img class ='w-14 left-4 md:left-0 lg:1/12 absolute z-10' src ={bookmark} alt='bookmark'/>
 
                             <div class="group rounded-xl relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-darkBrown/30">
                                 <h1 class="text-md font-medium text-white m-4">{item.name}</h1>
