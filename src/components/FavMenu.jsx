@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const FavMenu = () => {
     return (
-        <favmenu>
-            <div class='bg-no-repeat bg-cover w-full content-center p-8 relative' style={{ backgroundColor: "#605a44" }}>
+        <section className="bg-dustyBrown">
+            <div class='max-w-[1200px] mx-auto px-5 p-8 relative'>
                 <h1 className="text-center text-2xl my-5 text-brokenWhite">
                     <strong>THE ALL TIME FAVORITES</strong> 
                 </h1>
 
-                <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-items-center gap-6 mx-auto my-10 text-center text-brokenWhite w-4/5'>
+                <div className='flex flex-col justify-center items-center md:justify-between md:flex-row my-10 text-center text-brokenWhite'>
                     {favBreads.map((item, index) => (
-                        <div className='relative box border-t-4 border-cream shadow-lg rounded-xl' key={index}>
+                        <div className='relative box border-t-4 border-cream shadow-lg rounded-xl w-[340px] md:mb-0 mb-12' key={index}>
                             <img class ='w-14 left-4 md:left-0 lg:1/12 absolute z-10' src ={bookmark} alt='bookmark'/>
 
                             <div class="group rounded-xl relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-darkBrown/30">
@@ -33,7 +33,7 @@ const FavMenu = () => {
                     </Link>
                 </div>
             </div> 
-        </favmenu>
+        </section>
     ) 
 }
 

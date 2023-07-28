@@ -28,20 +28,22 @@ const About = () => {
   ];
 
   return (
-    <>
+    <section id="about">
       <HeroSection wallpaper={wallpaper} upperText="Baking Blissful Moments," bottomText="One Delightful Bite at a Time!" />
-      <PageHeading text="About Us" />
-      <AboutComponent {...about[0]} />
-      <PageHeading text="Our Philosophy" />
-      <AboutComponent {...about[1]} />
-      <iframe src="https://www.youtube.com/embed/QDKUkPSw3yA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="mx-auto my-20 w-10/12 h-[473px] md:w-[1000px] md:h-[563px]" allowfullscreen></iframe>
-      <Map />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center mx-auto mt-20 mb-20 md:mb-40 w-10/12 md:w-[1000px]">
-        {outlet.map(({ src, alt }, idx) => (
-          <img src={require(`../assets/images/${src}`)} alt={alt} key={idx} className={`${idx % 2 === 1 ? "relative top-0 md:top-20" : ""}`} />
-        ))}
+      <div className="max-w-[1200px] mx-auto px-5">
+        <PageHeading text="About Us" />
+        <AboutComponent {...about[0]} />
+        <PageHeading text="Our Philosophy" />
+        <AboutComponent {...about[1]} />
+        <iframe src="https://www.youtube.com/embed/QDKUkPSw3yA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="mx-auto my-20 w-full h-[473px] md:w-[1160px] md:h-[653px]" allowfullscreen></iframe>
+        <Map />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center mx-auto mt-20 mb-20 md:mb-40 w-full md:w-[1160px]">
+          {outlet.map(({ src, alt }, idx) => (
+            <img src={require(`../assets/images/${src}`)} alt={alt} key={idx} className={`${idx % 2 === 1 ? "relative top-0 md:top-20" : ""}`} />
+          ))}
+        </div>
       </div>
-    </>
+    </section>
   );
 }
 
